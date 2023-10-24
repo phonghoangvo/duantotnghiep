@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
+use App\Models\Sanpham;
 Paginator::useBootstrap();
 
 
@@ -13,7 +14,7 @@ class TinController extends Controller
     }
     function sanpham(){
         $page=24;
-        $data = \App\Models\SanPham::all()
+        $data = \App\Models\Sanpham::all()
         ->paginate($page)->withQueryString();
         return view("sanpham",['data'=>$data]);
     }
