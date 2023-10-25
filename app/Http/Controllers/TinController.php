@@ -14,8 +14,7 @@ class TinController extends Controller
     }
     function sanpham(){
         $page=24;
-        $data = \App\Models\Sanpham::all()
-        ->paginate($page)->withQueryString();
+        $data = Sanpham::paginate($page)->withQueryString();
         return view("sanpham",['data'=>$data]);
     }
 }

@@ -150,6 +150,7 @@ Trang sản phẩm
                     </div>
                     @endforeach
                     
+                    {{ $data->links() }}
                     {{-- <div class="col-xl-3 p-2 sanpham">
                         <div class="boxsanpham p-2">
                             <div class="img">
