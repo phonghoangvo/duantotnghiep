@@ -15,12 +15,12 @@ class Sanpham extends Model
         'name',
         'img',
         'price',
-        'price-sale',
-        'mo-ta',
+        'priceSale',
+        'moTa',
         'hot',
         'hidden',
-        'id_category',
-        'tom_tat',
+        'idCategory',
+        'tomTat',
         'ngayDang',
     ];
 
