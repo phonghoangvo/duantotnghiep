@@ -21,3 +21,9 @@ use App\Http\Controllers\TinController;
 
 Route::get('/',[TinController::class, 'index']);
 Route::get('/sanpham',[TinController::class, 'sanpham']);
+Route::get('/list',[ProductController::class,'list']);
+Route::get('/add',[ProductController::class,'add']);
+Route::post('/save',[ProductController::class,'save']);
+Route::get('/edit/{id}',[ProductController::class,'edit']);
+Route::post('/update',[ProductController::class,'update']);
+Route::get('/del/{id}',[ProductController::class,'del']);
